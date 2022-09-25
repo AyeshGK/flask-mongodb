@@ -15,3 +15,7 @@ mongodb-migrate --url <use your url> --migrations
 example :accept:
 
 mongodb-migrate --url mongodb+srv://<username>:<password>@<clustername>.<#####>.mongodb.net/<dbname>?retryWrites=true&w=majority   --migrations
+
+
+## rollback
+mongodb-migrate --url  mongodb+srv://<username>:<password>@<clustername>.<#####>.mongodb.net/<dbname>?retryWrites=true&w=majority    --downgrade
